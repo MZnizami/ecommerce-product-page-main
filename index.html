@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 15px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      font-family: 'Kumbh Sans', sans-serif;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="hoverEffect container" id="hoverImageDiv">
+  <div class="row cssEffect">
+  
+    <div class="slideshow mainImageHover">
+      <span><img src="images/icon-close.svg" alt="" class="closeHover"></span>
+      <div class="pointerImg">
+        <img src="images/icon-previous.svg" alt="" class="left">
+        <img src="images/icon-next.svg" alt="" class="right"></div>
+      <img src="images/image-product-1.jpg" alt=""  class="mainImg mainImg2" id="theImageMainHover">
+      <div class="hoverImgSmall">
+        <img src="images/image-product-1.jpg" alt="" id="img1">
+        <img src="images/image-product-2.jpg" alt="" id="img2">
+        <img src="images/image-product-3.jpg" alt="" id="img3">
+        <img src="images/image-product-4.jpg" alt="" id="img4">
+      </div>
+      </div>
+  </div>
+  
+  </div>
+  <aside class="nav2">
+    
+      <div class="item2">
+        <img src="images/icon-close.svg" alt="" class="closing">
+        <ul>
+          
+          <li>Collections</li>
+          <li>Men</li>
+          <li>Women</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+        </div>
+
+
+  
+   
+
+
+  </aside>
+
+  <nav class="container">
+    <div class="row">
+
+
+      <div class="logo">
+        <img src="images/icon-menu.svg" alt="" style="margin-right: 10px;" class="menu">
+      <img src="images/logo.svg" alt="logo icon" class="brand">
+      </div>
+      <div class="item">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      </div>
+      <!-- my card  -->
+      <div class="card2">
+        <span class="showNum" style="font-size: 8px; padding: 0px 3px; border-radius: 10px;
+        background-color: orangered;color: white; width: fit-content;height:fit-content;position: absolute;top: 10px;left: 10px;"></span>
+      <img src="images/icon-cart.svg" alt="card icon" class="cardIcon">
+      <div class="cardDiv">
+        <div class="title">
+          <h5 style="margin-left: 10px;font-weight: bold; font-size: 15px;">Card</h5>
+        </div>
+        <div class="cardElement">
+          <div class="cardContent">
+            <img src="images/image-product-1.jpg" alt="" style="width: 50px;height: fit-content;">
+            <div>
+              <span>Fall Limited Edition Sneakers</span><br>
+              <span>$125.00 x <span class="amountNum">3  </span><span class="total">$337.00</span></span>
+            </div>
+            <img src="images/icon-delete.svg" alt="" class="delete">
+            <button class="checkout">Checkout</button>
+          </div>
+        <p style="text-align:center;">Your Card is Empty</p>
+        </div>
+          </div>
+      <img src="images/image-avatar.png" alt="avatar" class="profile">
+      </div>
+    <!-- my card finished -->
+    </div>
+
+
+  </nav>
+
+<section class="container">
+  <div class="row">
+    <div class="slideshow col-sm">
+      <img src="images/image-product-1.jpg" alt=""  class="mainImg" id="theMainImg">
+      <div class="smallImg">
+        <img src="images/image-product-1.jpg" alt="" id="img1">
+        <img src="images/image-product-2.jpg" alt="" id="img2">
+        <img src="images/image-product-3.jpg" alt="" id="img3">
+        <img src="images/image-product-4.jpg" alt="" id="img4">
+      </div>
+      </div>
+      
+      <div class="description col-sm">
+      
+        <h4 style="color:hsl(26, 100%, 55%);">Sneaker Company</h4>
+      
+        <h1>Fall Limited Edition <br> Sneakers</h1>
+      <p>
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </p>
+       
+      <div class="money">
+        <span style="font-size: 20px;"><b>$125.00</b></span>
+       <span style="background-color: hsl(223, 64%, 98%); padding: 5px; font-size: 13px; color: hsl(26, 100%, 55%);font-weight: bold;">50%</span> 
+       <span style="font-weight: bold; color: hsl(220, 14%, 75%);text-decoration: line-through;">$250.00</span> 
+        
+      </div>
+        
+        <div class="number">
+          <div class="digits">
+          <span id="minus">-</span>
+          <span id="theNum">0</span>
+          <span id="add">+</span>
+        </div>
+          <button class="addButton"> <img src="images/icon-cart.svg" alt=""> Add to cart</button>
+        </div>
+       
+        
+      
+      </div>
+      
+
+  </div>
+
+
+
+
+
+</section>
+
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/MZnizami">Manizha Nizami</a>.
+  </div>
+
+<script src="java.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
